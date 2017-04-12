@@ -38,7 +38,7 @@ export default {
   },
   methods:{
     getCustomers: function() {
-        this.$http.get('/static/data/wenhua.json').then(response => {
+        this.$http.get('./static/data/wenhua.json').then(response => {
             this.data.content=response.data.statuses.history.content;
             this.data.imgs=response.data.statuses.history.imgs;
             this.data.wContent=response.data.statuses.wenhua.content;

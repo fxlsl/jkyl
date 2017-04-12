@@ -36,7 +36,7 @@ export default {
   },
   methods:{
     getCustomers: function() {
-        this.$http.get('/static/data/jz.json').then(response => {
+        this.$http.get('./static/data/jz.json').then(response => {
             console.log(response.data);
             this.data.content=response.data.statuses.content;
         }, response => {

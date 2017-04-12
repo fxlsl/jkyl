@@ -34,7 +34,7 @@ export default {
   },
   methods:{
     getCustomers: function() {
-        this.$http.get('/static/data/join.json').then(response => {
+        this.$http.get('./static/data/join.json').then(response => {
             this.data.content=response.data.statuses.content;
         }, response => {
         // error callback

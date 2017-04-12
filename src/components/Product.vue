@@ -34,7 +34,7 @@ export default {
   methods:{
     getCustomers: function() {
         console.log(this);
-        this.$http.get('/static/data/chanpinjie.json').then(response => {
+        this.$http.get('./static/data/chanpinjie.json').then(response => {
             this.data.imgs=response.data.statuses.imgs;
         }, response => {
         // error callback
