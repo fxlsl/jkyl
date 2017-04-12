@@ -2,7 +2,6 @@
   <div class="index">
       <H :iData="iData"></H>
       <List :iData="iData"></List>
-      <img :src="'./static/assets/guanwangpe1.png'" alt="">
       <F></F>
   </div>
 </template>
