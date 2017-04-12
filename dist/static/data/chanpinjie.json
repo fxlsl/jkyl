@@ -1,0 +1,11 @@
+{
+    "statuses":{
+        "imgs":[
+            "./static/assets/chanpinjie1.jpg",
+            "./static/assets/chanpinjie2.jpg",
+            "./static/assets/chanpinjie3.jpg",
+            "./static/assets/chanpinjie4.jpg",
+            "./static/assets/chanpinjie5.jpg"
+        ]
+    }
+}
