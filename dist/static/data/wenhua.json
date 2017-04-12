@@ -8,8 +8,8 @@
         "感恩：感谢朋友、感谢用户、感谢合作伙伴、感谢同事、感谢社会，心怀梦想，目标一致。 "
       ],
       "imgs": [
-        "/static/assets/guanwangpe.png",
-        "/static/assets/guanwangpe1.png"
+        "./static/assets/guanwangpe.png",
+        "./static/assets/guanwangpe1.png"
       ]
     },
     "wenhua": {

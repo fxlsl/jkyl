@@ -4,25 +4,25 @@
         "content":[
             {
                 "title":"2015.冬 YouYou家族合影",
-                "img":"/static/assets/jz01.jpg"
+                "img":"./static/assets/jz01.jpg"
             },{
                 "title":"2015.夏 YouYou家族合影",
-                "img":"/static/assets/jz02.jpg"
+                "img":"./static/assets/jz02.jpg"
             },{
                 "title":"我们是YouYou家族",
-                "img":"/static/assets/jz03.jpg"
+                "img":"./static/assets/jz03.jpg"
             },{
                 "title":"夏季免费供应可乐，程序猿哥哥的最爱！",
-                "img":"/static/assets/jz04.jpg"
+                "img":"./static/assets/jz04.jpg"
             },{
                 "title":"餐后水果、咖啡、茶水自助区",
-                "img":"/static/assets/jz05.jpg"
+                "img":"./static/assets/jz05.jpg"
             },{
                 "title":" 免费供应下午茶，口味会经常换哦~",
-                "img":"/static/assets/jz06.jpg"
+                "img":"./static/assets/jz06.jpg"
             },{
                 "title":"美丽可爱的你们",
-                "img":"/static/assets/jz07.jpg"
+                "img":"./static/assets/jz07.jpg"
             }
         ]
     }
