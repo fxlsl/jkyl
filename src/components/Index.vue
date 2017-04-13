@@ -3,6 +3,26 @@
       <img class="logo" src="../../static/assets/logo.png">
       <H :iData="iData"></H>
       <List :iData="iData"></List>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide" >
+                  <img src="../../static/assets/gongsigulo.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                  <img src="../../static/assets/gongsijian.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                  <img src="../../static/assets/gongsiwang.jpg" alt="">
+              </div>
+              <div class="swiper-slide" >
+                  <img src="../../static/assets/yuyueguaha.png" alt="">
+              </div>
+              <div class="swiper-slide" >
+                  <img src="../../static/assets/zizhuji.jpg" alt="">
+              </div>
+          </div>
+
+      </div>
       <F class="fo"></F>
   </div>
 </template>
@@ -11,6 +31,7 @@
 import F from '@/components/Footer';
 import H from '@/components/Header';
 import List from '@/components/List';
+let imgs = ['chanpinjie1.jpg','chanpinjie2.jpg','chanpinjie3.jpg','chanpinjie4.jpg','chanpinjie5.jpg',];
 export default {
   name: 'index',
   data () {
@@ -18,10 +39,28 @@ export default {
         iData:{
             isList: 0,
             isOn:0,
-        }
+        },
+
     }
   },
+  mounted(){
+      var mySwiper = new Swiper ('.swiper-container', {
+    // direction: '',
+    loop: true,
+    autoplay: 5000,//可选选项，自动滑动
+    // // 如果需要分页器
+    // pagination: '.swiper-pagination',
+    //
+    // // 如果需要前进后退按钮
+    // nextButton: '.swiper-button-next',
+    // prevButton: '.swiper-button-prev',
+    //
+    // // 如果需要滚动条
+    // scrollbar: '.swiper-scrollbar',
+  })
+  },
   methods:{
+
 
   },
   components:{F,List,H,},
@@ -34,6 +73,13 @@ export default {
 .index{
     height: 100%;
     position: relative;
+}
+.swiper-container{
+    width: 100%;
+    padding: 10px 0;
+}
+.swiper-container img{
+    width: 100%;
 }
 .fo{
     position: absolute;
