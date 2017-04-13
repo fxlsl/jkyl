@@ -2,7 +2,7 @@
   <div class="list" v-show="iData.isList">
       <ul>
           <li v-for="(item,index) in msg" @click="change(index)" :class="{on:isOn==index}">
-              <router-link :to="{path:item[1]}">{{item[0]}}</router-link>
+              <router-link class="ac" :to="{path:item[1]}">{{item[0]}}</router-link>
           </li>
       </ul>
   </div>
@@ -41,6 +41,9 @@ export default {
         color:rgb(102, 102, 102);
         background-color: #f0f0f0;
         border-bottom: 1px solid #dbdbdb;
+    }
+    .ac{
+        display: block;
     }
     .on{
         background-color: rgb(52, 178, 134);
