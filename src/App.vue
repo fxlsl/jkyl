@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
-    <transition enter-active-class="animated zoomInleft" leave-active-class="animated zoomOutleft">
+    <!-- <img class="logo" src="./assets/logo.png"> -->
+    <transition enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
         <router-view></router-view>
     </transition>
   </div>
@@ -18,7 +18,7 @@ export default {
     margin: 0;
     padding:0;
 }
-body{
+html,body{
     margin:0;
     padding:0;
     height: 100%;
@@ -33,6 +33,8 @@ body{
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
+  height: 100%;
+  position: relative;
 }
 .logo{
     max-width: 100%;

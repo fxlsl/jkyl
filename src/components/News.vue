@@ -1,8 +1,9 @@
 <template>
   <div class="news">
+      <img class="logo" src="../../static/assets/logo.png">
       <H :iData="iData"></H>
       <List :iData="iData"></List>
-      <h4>
+      <h4 :style="{'background-image': 'url('+ cloudSrc +')'}">
           公司动态
       </h4>
       <ul>
@@ -30,7 +31,8 @@ export default {
         iData:{
             isList: 0,
             isOn:3,
-        }
+        },
+        cloudSrc:require('../../static/assets/wenhua_bg.png')
     }
   },
   methods:{
@@ -59,7 +61,7 @@ export default {
 
     h4{
         margin:20px 10px;
-        background-image: url('/static/assets/wenhua_bg.png');
+        /*background-image: url('/wenhua_bg.png');*/
         font-size: 23px;
         color: rgb(72, 164, 124);
         font-weight: bold;

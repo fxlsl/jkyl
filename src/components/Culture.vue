@@ -1,15 +1,16 @@
 <template>
   <div class="culture">
+      <img class="logo" src="../../static/assets/logo.png">
       <H :iData="iData"></H>
       <List :iData="iData"></List>
-      <h4>
+      <h4 :style="{'background-image': 'url('+ cloudSrc +')'}">
           健康无忧成长史
       </h4>
       <p v-for="item in data.wContent">{{item}}</p>
       <p v-for="item in data.imgs" >
           <img :src="item" alt="">
       </p>
-      <h4>
+      <h4 :style="{'background-image': 'url('+ cloudSrc +')'}">
           企业文化
       </h4>
       <p v-for="item in data.content">{{item}}</p>
@@ -33,7 +34,8 @@ export default {
         iData:{
             isList: 0,
             isOn:1,
-        }
+        },
+        cloudSrc:require('../../static/assets/wenhua_bg.png')
     }
   },
   methods:{
@@ -63,7 +65,7 @@ export default {
     }
     h4{
         margin:20px 10px;
-        background-image: url('/static/assets/wenhua_bg.png');
+        /*background-image: url('/wenhua_bg.png');*/
         font-size: 23px;
         color: rgb(72, 164, 124);
         font-weight: bold;

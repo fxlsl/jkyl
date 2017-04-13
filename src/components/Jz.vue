@@ -1,8 +1,9 @@
 <template>
   <div class="jz">
+      <img class="logo" src="../../static/assets/logo.png">
       <H :iData="iData"></H>
       <List :iData="iData"></List>
-      <h4>
+      <h4 :style="{'background-image': 'url('+ cloudSrc +')'}">
           家族掠影
       </h4>
       <ul>
@@ -31,14 +32,28 @@ export default {
         iData:{
             isList: 0,
             isOn:4,
-        }
+        },
+        cloudSrc:require('../../static/assets/wenhua_bg.png')
     }
   },
   methods:{
     getCustomers: function() {
         this.$http.get('./static/data/jz.json').then(response => {
-            console.log(response.data);
             this.data.content=response.data.statuses.content;
+            // console.log(this.data.content[0].img);
+            // let arr = response.data.statuses.content;
+            // arr = response.data.statuses.content.map(item=>{
+            //     return {
+            //         title: item.title,
+            //         img: require('../.'+item.img)
+            //     }
+            // })
+            // this.data.content=response.data.statuses.content.map((item)=>{
+            //     return {
+            //         'title': item.title,
+            //         'img': require(item+'')
+            //     }
+            // });
         }, response => {
         // error callback
         });
@@ -64,7 +79,7 @@ export default {
     }
     h4{
         margin:20px 10px;
-        background-image: url('/static/assets/wenhua_bg.png');
+        /*background-image: url('/wenhua_bg.png');*/
         font-size: 23px;
         color: rgb(72, 164, 124);
         font-weight: bold;
