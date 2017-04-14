@@ -2,7 +2,7 @@
   <div class="header">
       <h4>
           {{msg}}
-          <a href="javascript:;" @click="isShow">ddd</a>
+          <a href="javascript:;" @click="isShow">...</a>
       </h4>
   </div>
 </template>
