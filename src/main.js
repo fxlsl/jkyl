@@ -10,7 +10,14 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 // 单一事件管理
 let Event = new Vue();
-Vue.use(resource)
+Vue.use(resource);
+// router.beforeEach((to, from, next) => {
+//     window.scroll(0,0);
+//   next(()=>{
+//       console.log(111);
+//       window.scroll(0,0);
+//   })
+// })
 new Vue({
   el: '#app',
   router,
