@@ -60,4 +60,7 @@ a {
 p{
     line-height: 1;
 }
+.footer{
+    font-size: 14px;
+}
 </style>
