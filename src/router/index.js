@@ -6,6 +6,7 @@ import Product from '@/components/Product'
 import News from '@/components/News'
 import Jz from '@/components/Jz'
 import Join from '@/components/Join'
+import Detail from '@/components/Detail'
 
 Vue.use(Router)
 
@@ -36,6 +37,10 @@ export default new Router({
       path: '/join',
       name: 'Join',
       component: Join
+    }, {
+      path: '/detail:id',
+      name: 'detail',
+      component: Detail,
     }, {
       path: '/',
       redirect: '/index'

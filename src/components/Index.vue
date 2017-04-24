@@ -5,21 +5,21 @@
       <List :iData="iData"></List>
       <div class="swiper-container">
           <div class="swiper-wrapper">
-              <div class="swiper-slide" >
+              <router-link :to="{ name: 'detail', params: { id: 'yy' }}" class="swiper-slide" >
                   <img src="../../static/assets/gongsigulo.jpg" alt="">
-              </div>
-              <div class="swiper-slide" >
+              </router-link>
+              <router-link :to="{ name: 'detail', params: { id: 'jk' }}" class="swiper-slide" >
                   <img src="../../static/assets/gongsijian.jpg" alt="">
-              </div>
-              <div class="swiper-slide" >
+              </router-link>
+              <router-link :to="{ name: 'detail', params: { id: 'ws' }}" class="swiper-slide" >
                   <img src="../../static/assets/gongsiwang.jpg" alt="">
-              </div>
-              <div class="swiper-slide" >
+              </router-link>
+              <router-link :to="{ name: 'detail', params: { id: 'yk' }}" class="swiper-slide" >
                   <img src="../../static/assets/yuyueguaha.png" alt="">
-              </div>
-              <div class="swiper-slide" >
+              </router-link>
+              <router-link :to="{ name: 'detail', params: { id: 'sm' }}" class="swiper-slide" >
                   <img src="../../static/assets/zizhuji.jpg" alt="">
-              </div>
+              </router-link>
           </div>
 
       </div>
